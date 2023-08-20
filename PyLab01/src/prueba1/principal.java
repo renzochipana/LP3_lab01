@@ -8,8 +8,9 @@ public class principal {
 		boolean fl= false;
 		vida=0;
 		Scanner sc= new Scanner(System.in);
+		// usando do while 
 		do {
-			vida++;
+			vida++; // incrementado mas uno 
 			System.out.println("vida" + vida + "\t¿cual es el numero secreto?");
 			rp=sc.nextInt();
 			if(rp == 1234)
