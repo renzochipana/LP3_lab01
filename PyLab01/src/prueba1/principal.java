@@ -1,5 +1,4 @@
 package prueba1;
-// librerias
 import java.util.Scanner;
 
 public class principal {
@@ -8,19 +7,20 @@ public class principal {
 		boolean fl= false;
 		vida=0;
 		Scanner sc= new Scanner(System.in);
-		// usando do while 
 		do {
-			vida++; // incrementado mas uno 
+			vida++;
 			System.out.println("vida" + vida + "\t¿cual es el numero secreto?");
 			rp=sc.nextInt();
 			if(rp == 1234)
 				fl=true;
 		}while(vida<3 && !fl);
-		if(fl == true)
-			System.out.println("adivinastes!!!!! ");
-		else
-			System.out.println("ups , perdites!!!! ");
-		//cerrar scanner
+		if (fl) {
+		    System.out.println("¡Adivinaste!");
+		    String premio = regalo.elegir(vida);
+		    System.out.println("Premio: " + premio);
+		} else {
+		    System.out.println("¡Ups, perdiste!");
+		}
 		sc.close();
 	}
 }
