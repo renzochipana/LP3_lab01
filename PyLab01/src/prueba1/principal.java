@@ -1,5 +1,5 @@
 package prueba1;
-
+// librerias
 import java.util.Scanner;
 
 public class principal {
@@ -19,6 +19,7 @@ public class principal {
 			System.out.println("adivinastes!!!!! ");
 		else
 			System.out.println("ups , perdites!!!! ");
+		//cerrar scanner
 		sc.close();
 	}
 }
