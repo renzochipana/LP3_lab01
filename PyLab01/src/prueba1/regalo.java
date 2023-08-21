@@ -1,7 +1,6 @@
 package prueba1;
-
-public class regalo {
-	public static String elegir(int vida){
+public class regalo{
+    public static String elegir(int vida){
         String gift = "";
         switch(vida){
         case 1: gift="un pasaje al caribe";break;
